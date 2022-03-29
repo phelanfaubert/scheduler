@@ -6,9 +6,9 @@ import Button from "components/Button";
 export default function Form(props) {
 
   const { interviewers, onSave, onCancel } = props;
-  
+
   const [student, setStudent] = useState(props.student || "");
-  const [interviewer, setInterviewer] = useState(props.interviewer || null);
+  const [interviewer, setInterviewer] = useState(props.interviewer ||null);
 
   const reset = () => {
     setStudent("");
@@ -20,8 +20,7 @@ export default function Form(props) {
     onCancel();
   };
 
-  console.log("student: ", student);
-  console.log("interviewer: ", interviewer);
+
   return (
     <main className="appointment__card appointment__card--create">
       <section className="appointment__card-left">
