@@ -1,5 +1,4 @@
 export function getAppointmentsForDay(state, day) {
-
   const appointmentsArray = [];
 
   state.days.filter((dayItem) => {
