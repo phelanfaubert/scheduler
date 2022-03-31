@@ -55,8 +55,7 @@ export default function Appointment(props) {
       .catch((error) => {
         transition(ERROR_DELETE, true)
       })
-      
-  }
+  };
 
   return (
     <Fragment>
@@ -90,7 +89,6 @@ export default function Appointment(props) {
           <Form
             student={interview.student}
             interviewers={interviewers}
-            interviewer={interview.interviewer.id}
             onCancel={back}
             onSave={save}
           />
@@ -115,5 +113,5 @@ export default function Appointment(props) {
         )}
       </article>
     </Fragment>
-  );
-}
+  )
+};

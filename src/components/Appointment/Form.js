@@ -8,7 +8,7 @@ export default function Form(props) {
   const { interviewers, onSave, onCancel } = props;
 
   const [student, setStudent] = useState(props.student || "");
-  const [interviewer, setInterviewer] = useState(props.interviewer ||null);
+  const [interviewer, setInterviewer] = useState(props.interviewer || null);
   const [error, setError] = useState("");
 
 
@@ -67,4 +67,4 @@ export default function Form(props) {
       </section>
     </main>
   );
-}
+};

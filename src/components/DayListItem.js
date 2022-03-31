@@ -20,5 +20,5 @@ export default function DayListItem(props) {
           `${props.spots} spots remaining`}</h3>
     </li>
   );
-}
+};
 

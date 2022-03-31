@@ -4,30 +4,31 @@ import "components/Application.scss";
 import DayList from "./DayList";
 import Appointment from "./Appointment";
 import useApplicationData from "hooks/useApplicationData";
+
 import { getAppointmentsForDay } from "helpers/selectors";
 import { getInterview } from "helpers/selectors";
 import { getInterviewersForDay } from "helpers/selectors";
 
 export default function Application(props) {
   const { setDay, bookInterview, cancelInterview, state } =
-  useApplicationData();
+    useApplicationData();
 
   const dailyAppointments = getAppointmentsForDay(state, state.day);
   const interviewers = getInterviewersForDay(state, state.day);
 
   const schedule = dailyAppointments.map((appointment) => {
-  const interview = getInterview(state, appointment.interview);
+    const interview = getInterview(state, appointment.interview);
 
-  
+
     return (
       <Appointment
-      key={appointment.id}
-      {...appointment}
-      interview={interview}
-      interviewers={interviewers}
-      bookInterview={bookInterview}
-      cancelInterview={cancelInterview}
-    />
+        key={appointment.id}
+        {...appointment}
+        interview={interview}
+        interviewers={interviewers}
+        bookInterview={bookInterview}
+        cancelInterview={cancelInterview}
+      />
     );
   });
 
@@ -41,11 +42,11 @@ export default function Application(props) {
         />
         <hr className="sidebar__separator sidebar--centered" />
         <nav className="sidebar__menu">
-        <DayList 
-          days={state.days} 
-          value={state.day} 
-          onChange={setDay} 
-        />
+          <DayList
+            days={state.days}
+            value={state.day}
+            onChange={setDay}
+          />
         </nav>
         <img
           className="sidebar__lhl sidebar--centered"
@@ -55,9 +56,9 @@ export default function Application(props) {
       </section>
       <section className="schedule">
         {schedule}
-        <Appointment key="last" time="5pm" interviewers={interviewers}/>
+        <Appointment key="last" time="5pm" interviewers={interviewers} />
       </section>
     </main>
-  );
-}
+  )
+};
 

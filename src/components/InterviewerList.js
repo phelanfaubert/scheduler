@@ -7,7 +7,7 @@ import InterviewerListItem from "components/InterviewerListItem";
 
 export default function InterviewerList(props) {
 
-  
+
   const { value, onChange, interviewers } = props;
 
   const interviewerList = interviewers.map((interviewerItem) => {
@@ -30,9 +30,9 @@ export default function InterviewerList(props) {
     </section>
   );
 
-  
+
 }
 
 InterviewerList.propTypes = {
   interviewers: PropTypes.array.isRequired
-}
+};
