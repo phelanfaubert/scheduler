@@ -1,8 +1,8 @@
 # Interview Scheduler
 
-["Deleting appointment"](https://github.com/phelanfaubert/scheduler/blob/master/docs/delete-appointment.png?raw=true)
-["Editing appointment"](https://github.com/phelanfaubert/scheduler/blob/master/docs/edit-appointment.png?raw=true)
-["Main view of scheduler"](https://github.com/phelanfaubert/scheduler/blob/master/docs/scheduler.png?raw=true)
+!["Deleting appointment"](https://github.com/phelanfaubert/scheduler/blob/master/docs/delete-appointment.png?raw=true)
+!["Editing appointment"](https://github.com/phelanfaubert/scheduler/blob/master/docs/edit-appointment.png?raw=true)
+!["Main view of scheduler"](https://github.com/phelanfaubert/scheduler/blob/master/docs/scheduler.png?raw=true)
 
 ## Setup
 
